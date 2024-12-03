@@ -4,8 +4,10 @@
 name: Workflow de CI
 
 on:
+  push:
+    branches: ["develop"]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "main", "develop" ]
 
 jobs:
   testes:
